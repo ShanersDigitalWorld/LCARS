@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCARS Theme Demo</title>
+<link id="theme-link" rel="stylesheet" type="text/css" href="lcars-ultra-classic.css">
+<link rel="stylesheet" type="text/css" href="lcars-colors.css">
+<style>
+.demo-switcher {
+  background: #111;
+  color: #eee;
+  font-family: sans-serif;
+  padding: 12px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.demo-switcher button {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #222;
+  color: #eee;
+  cursor: pointer;
+}
+.demo-switcher button.active {
+  background: #eee;
+  color: #111;
+}
+.demo-section {
+  padding: 24px 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.demo-section h2 {
+  font-family: sans-serif;
+  color: #eee;
+}
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+.swatch {
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.swatch-color {
+  height: 56px;
+}
+.swatch-label {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #eee;
+  background: #111;
+  padding: 6px 4px;
+}
+.demo-note {
+  font-family: sans-serif;
+  color: #bbb;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="demo-switcher">
+  <span>LCARS demo, pick a theme:</span>
+  <button data-theme="lcars-ultra-classic.css" class="active">Ultra Classic</button>
+  <button data-theme="lcars-ultra-nemesis-blue.css">Nemesis Blue</button>
+  <button data-theme="lcars-ultra-picard.css">Picard</button>
+</div>
+
+<div class="demo-section">
+  <div class="banner">LCARS <span class="blink">Online</span></div>
+</div>
+
+<div class="demo-section">
+  <div class="buttons">
+    <a href="#">NAV-01</a>
+    <a href="#">OPS-02</a>
+    <a href="#">ENG-03</a>
+  </div>
+</div>
+
+<div class="demo-section">
+  <div class="bar-1"></div>
+  <div class="bar-2"></div>
+  <div class="bar-3"></div>
+  <div class="bar-4"></div>
+  <div class="bar-5"></div>
+  <div class="bar-6"></div>
+</div>
+
+<div class="demo-section">
+  <div class="cascade-wrapper">
+    <div class="data-cascade" id="default">
+      <div class="row-1"><div class="dc1">101</div><div class="dc2">7109</div><div class="dc3">1966</div><div class="dc4">36</div><div class="dc5">880</div><div class="dc6">11.03</div><div class="dc7">1954</div><div class="dc8">03</div><div class="dc9">6.08</div><div class="dc10">241</div><div class="dc11">309</div><div class="dc12">7.08</div><div class="dc13">1935</div><div class="dc14">12.20</div><div class="dc15">53</div></div>
+    </div>
+  </div>
+  <div class="caption">DATA CASCADE, LIVE FEED</div>
+</div>
+
+<div class="demo-section">
+  <h2>Color palette</h2>
+  <p class="demo-note">Every swatch below comes from lcars-colors.css, the palette sheet behind all three themes.</p>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="swatch-color space-white"></div><div class="swatch-label">space-white</div></div>
+    <div class="swatch"><div class="swatch-color violet-creme"></div><div class="swatch-label">violet-creme</div></div>
+    <div class="swatch"><div class="swatch-color magenta"></div><div class="swatch-label">magenta</div></div>
+    <div class="swatch"><div class="swatch-color green"></div><div class="swatch-label">green</div></div>
+    <div class="swatch"><div class="swatch-color blue"></div><div class="swatch-label">blue</div></div>
+    <div class="swatch"><div class="swatch-color yellow"></div><div class="swatch-label">yellow</div></div>
+    <div class="swatch"><div class="swatch-color sunflower"></div><div class="swatch-label">sunflower</div></div>
+    <div class="swatch"><div class="swatch-color violet"></div><div class="swatch-label">violet</div></div>
+    <div class="swatch"><div class="swatch-color orange"></div><div class="swatch-label">orange</div></div>
+    <div class="swatch"><div class="swatch-color african-violet"></div><div class="swatch-label">african-violet</div></div>
+    <div class="swatch"><div class="swatch-color red"></div><div class="swatch-label">red</div></div>
+    <div class="swatch"><div class="swatch-color almond"></div><div class="swatch-label">almond</div></div>
+    <div class="swatch"><div class="swatch-color almond-creme"></div><div class="swatch-label">almond-creme</div></div>
+    <div class="swatch"><div class="swatch-color bluey"></div><div class="swatch-label">bluey</div></div>
+    <div class="swatch"><div class="swatch-color gray"></div><div class="swatch-label">gray</div></div>
+    <div class="swatch"><div class="swatch-color sky"></div><div class="swatch-label">sky</div></div>
+    <div class="swatch"><div class="swatch-color ice"></div><div class="swatch-label">ice</div></div>
+    <div class="swatch"><div class="swatch-color gold"></div><div class="swatch-label">gold</div></div>
+    <div class="swatch"><div class="swatch-color mars"></div><div class="swatch-label">mars</div></div>
+    <div class="swatch"><div class="swatch-color peach"></div><div class="swatch-label">peach</div></div>
+    <div class="swatch"><div class="swatch-color butterscotch"></div><div class="swatch-label">butterscotch</div></div>
+  </div>
+</div>
+
+<script>
+var link = document.getElementById("theme-link");
+var buttons = document.querySelectorAll("[data-theme]");
+function setActive(clicked) {
+  buttons.forEach(function(b) { b.classList.remove("active"); });
+  clicked.classList.add("active");
+}
+buttons.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    link.href = btn.getAttribute("data-theme");
+    setActive(btn);
+  });
+});
+</script>
+
+</body>
+</html>
